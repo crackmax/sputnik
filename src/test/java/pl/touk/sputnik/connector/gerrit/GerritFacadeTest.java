@@ -91,6 +91,10 @@ class GerritFacadeTest {
 
         verify(gerritApi.changes().id(CHANGE_ID).revision(REVISION_ID)).review(any());
     }
+    @Test
+    void newTest(){
+        assertThat(Boolean.TRUE).isTrue();
+    }
 
     private GerritFacade createGerritFacade() throws IOException, RestApiException {
         @SuppressWarnings("UnstableApiUsage")
