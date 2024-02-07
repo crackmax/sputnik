@@ -95,6 +95,10 @@ class GerritFacadeTest {
     void newTest(){
         assertThat(Boolean.TRUE).isTrue();
     }
+    @Test
+    void newTestFalse(){
+        assertThat(Boolean.FALSE).isFalse();
+    }
 
     private GerritFacade createGerritFacade() throws IOException, RestApiException {
         @SuppressWarnings("UnstableApiUsage")
